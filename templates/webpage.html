@@ -1,0 +1,84 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-image: url("{% static 'images/facebook2.avif' %}");
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage</title>
+    <link rel="stylesheet" href='{% static "css/c1.css" %}'>
+</head>
+<body>
+   <header>
+    <h2> facebook</h2>
+    <div id="one"><label for="email">EMAIL</label><br>
+        <input type="text">
+        <br>
+        <input type="checkbox">KEEP ME LOGGED IN 
+        <br>
+    </div>
+    <div id="two">
+        <label for="password">PASSWORD</label><br>
+        <input type="text">
+        <button type="login">LOGIN</button>
+    </div>
+   </header>
+   <section>
+     <form>
+        <fieldset>
+            <legend>
+                <h1>SIGN UP</h1>
+                <h3>it's free and always will be.</h3>
+            </legend>
+            <div>
+                <label for="first name">FIRST NAME</label>
+                <input type="text">
+            </div><br>
+            <div>
+                <label for="last name">LAST NAME</label>
+                <input type="text">
+            </div><br>
+            <div>
+                <label for="your email">YOUR Email:</label>
+                <input type="text">
+            </div><br>
+            <div>
+                <label for="re-enter email">RE-ENTER EMAIL:</label>
+                <input type="text">
+            </div><br>
+            <div>
+                <label for="new password">NEW PASSWORD</label>
+                <input type="text">
+            </div><br>
+            <div>
+                <label for="i am">i am:</label>
+                <select name="select sex:" id="">
+                    <option value="">MALE</option>
+                    <option value="">FEMALE</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="BIRTHDAY">BIRTHDAY:</label>
+                <input type="date">
+                <h6>WHY DO I NEED TO PROVIDE MY BIRTHDAY?</h6>
+            </div>
+            <div>
+                <button type="signup">SIGNUP</button>
+            </div>
+            <hr>
+            <footer>create a page for a celeberity,bond and bussinesss</footer>
+        </fieldset>
+     </form>
+   </section>
+</body>
+<footer><hr>
+    english(us) india(hindhi) france(french) italina
+    <hr>
+</footer>
+</html>
